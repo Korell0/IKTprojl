@@ -36,4 +36,8 @@ ul{
 li{
     margin-bottom: 25px;
 }
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.842);
+}
 
