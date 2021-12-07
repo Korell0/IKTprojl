@@ -3,12 +3,13 @@ html,body{
     height: 100%;
     margin: 0px;
     padding: 0px;
+    font-family: Arial;
 }
 .div1{
     float: left;
     height: 100%;
     width: 30%;
-    background-color:rgb(80, 75, 75);
+    background-color:rgb(75, 70, 70);
 }
 .div2{
     float: left;
@@ -19,14 +20,14 @@ html,body{
     float: top;
     width: 100%;
     height: 40%;
-    background-image: url('indexkep.jpg');
+    background-image: url('indexkep.png');
     background-repeat: no-repeat;
     background-size: 100% 100%; 
 }
 .also{
     float: bottom;
-    height: 60%;
-    width: 100;
+    height: 55%;
+    
 
 }
 ul{
@@ -44,11 +45,17 @@ a{
 }
 h1{
     text-align: center;
-    font-size: 80px;
+    font-size: 50px;
+    margin-bottom: 80px;
 }
 .indexgolyo{
    height: 50%;
    display: block;
    margin: 0 auto;
+}
+li{
+  border-bottom: 2px solid rgba(39, 39, 39, 0.493);
+  padding: 10px 10px;
+  margin-right: 10%;
 }
 
