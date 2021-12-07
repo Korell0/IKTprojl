@@ -8,7 +8,7 @@ html,body{
     float: left;
     height: 100%;
     width: 30%;
-    background-color:rgb(92, 86, 86);
+    background-color:rgb(80, 75, 75);
 }
 .div2{
     float: left;
@@ -29,12 +29,12 @@ html,body{
 }
 ul{
     list-style-type: none;
-    margin-top: 5%;
+    margin-top: 10%;
     color: rgba(255, 255, 255, 0.842);
     margin-bottom: 5px;
 }
 li{
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 a{
     text-decoration: none;
