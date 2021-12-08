@@ -58,4 +58,15 @@ li{
   padding: 10px 10px;
   margin-right: 10%;
 }
+.otos{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 20px;
+ width: 80%;
+ border: solid 3px rgb(238, 199, 117);
+}
+#grafikon{
+    background-color: rgb(216, 213, 213);
+}
 
