@@ -4,6 +4,7 @@ def legkisebbszam():
     with open('otos.csv', newline='') as csvfile:
         spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
         new_list = []
+        final_list = []
         kicsi = 500
         for row in spamreader:
             nyeroszamok = row[4]
@@ -17,6 +18,6 @@ def legkisebbszam():
                     continue
                 else:
                     kicsi = items
-        return kicsi
+                    final_list.append(kicsi)
+    return final_list
 
-legkisebbszam()

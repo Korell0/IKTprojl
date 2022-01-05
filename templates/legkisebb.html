@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
     <title>Lottó Projekt</title>
 </head>
 <body>
@@ -16,25 +16,21 @@
 
     <div class="also">
 <ul>
-    <li> <a link href="index.html">Korábbi sorsolások </a>  </li>
-    <li> <a link href="leggyakoribb.html">Leggyakoribb számok </a> </li>
-    <li> <a link href="leghasonlobb.html">Leghasonlóbb számsorok </a></li>
-    <li>  <a link href="leghosszabb.html">Leghosszabb sorozatok számsorokban</a></li>
-    <li> <a link href="legkisebb.html">Legkisebb összegű számsorok</a></li>
-    <li> <a link href="grafikon.html">Grafikonok</a></li>
-    <li> <a link href="erdekes.html">Érdekes történetek</a></li>
+    <li> <a href="index.html">Korábbi sorsolások </a>  </li>
+    <li> <a href="leggyakoribb.html">Leggyakoribb számok </a> </li>
+    <li> <a href="leghasonlobb.html">Leghasonlóbb számsorok </a></li>
+    <li>  <a href="leghosszabb.html">Leghosszabb sorozatok számsorokban</a></li>
+    <li> <a href="legkisebb.html">Legkisebb összegű számsorok</a></li>
+    <li> <a href="grafikon.html">Grafikonok</a></li>
+    <li> <a href="erdekes.html">Érdekes történetek</a></li>
 </ul>
     </div>
 </div>
     <div class="div2">
         <h1> A 3 legkisebb összegű számsorok </h1>
-        {% for osszeg in kicsi %}
-        <h2> Összeg: {{osszeg}}</h2>
-
-        <h2> Összeg:{{osszeg}} </h2>
-
-        <h2> Összeg:{{osszeg}} </h2>
-        {% endfor %}
+        <p>{{kicsi[0]}}</p>
+        <p>{{kicsi[1]}}</p>
+        <p>{{kicsi[2]}}</p>
     </div>
 
 <script src="/legkisebb.py/legkisebbszam"></script>

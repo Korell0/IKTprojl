@@ -1,0 +1,71 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+.div1{
+    float: left;
+    height: 100%;
+    width: 30%;
+    background-color:rgb(75, 70, 70);
+}
+.div2{
+    float: left;
+    height: 100%;
+    width: 70%;
+}
+.felso{
+    width: 100%;
+    height: 40%;
+    background-image: url('../kepek/indexkep.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+.also{
+    height: 54%;
+}
+ul{
+    list-style-type: none;
+    margin-top: 10%;
+    color: rgba(255, 255, 255, 0.842);
+    margin-bottom: 5px;
+}
+li{
+    margin-bottom: 30px;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.842);
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+.indexgolyo{
+   height: 50%;
+   display: block;
+   margin: 0 auto;
+}
+li{
+  border-bottom: 2px solid rgba(39, 39, 39, 0.493);
+  padding: 10px 10px;
+  margin-right: 10%;
+}
+.otos{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 20px;
+ width: 80%;
+ border: solid 3px rgb(238, 199, 117);
+}
+#grafikon{
+    background-color: rgb(216, 213, 213);
+}
+.golyo{
+    height: 15%;
+    margin-left: 10px;
+}
