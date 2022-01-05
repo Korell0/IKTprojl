@@ -10,7 +10,8 @@ def index():
 
 @app.route("/legkisebb.html")
 def kicsi():
-    return render_template("index.html")
+    kicsi = legkisebbszam()
+    return render_template("legkisebb.html",kicsi=kicsi)
             
 if __name__ == "__main__":
     app.run(debug=True)

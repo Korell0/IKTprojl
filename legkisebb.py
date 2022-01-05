@@ -17,6 +17,6 @@ def legkisebbszam():
                     continue
                 else:
                     kicsi = items
-        print(kicsi)
+        return kicsi
 
 legkisebbszam()
