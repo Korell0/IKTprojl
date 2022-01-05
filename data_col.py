@@ -1,5 +1,29 @@
 import csv
 
+def legkisebbszam():
+    with open('otos.csv', newline='') as csvfile:
+        spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+        new_list = []
+        final_list = []
+        kicsi = 500
+        for row in spamreader:
+            nyeroszamok = row[4]
+            ered = nyeroszamok.split(";")
+            del ered[0]
+            ered = [int(i) for i in ered]
+            new_list.append(sum(ered))
+        for items in new_list:
+            if items < kicsi:
+                if items == 0:
+                    continue
+                else:
+                    kicsi = items
+                    final_list.append(kicsi)
+    return final_list
+
+
+
+    
 def leggyakoribbszamok():
     leggyakoribb = {}
     with open('otos.csv', newline='') as csvfile:
@@ -27,6 +51,3 @@ def leggyakoribbszamok():
             if i[0] in top_3:
                 leggyakoribb[i[0]]=i[1]
         return leggyakoribb
-
-                
-
