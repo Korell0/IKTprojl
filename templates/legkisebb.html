@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
     <title>Lottó Projekt</title>
 </head>
 <body>
@@ -28,13 +28,9 @@
 </div>
     <div class="div2">
         <h1> A 3 legkisebb összegű számsorok </h1>
-        {% for d in kicsi %}
-        <h2> Összeg: {{d}}</h2>
-
-        <h2> Összeg:{{d}} </h2>
-
-        <h2> Összeg:{{d}} </h2>
-        {% endfor %}
+        <p>{{kicsi[0]}}</p>
+        <p>{{kicsi[1]}}</p>
+        <p>{{kicsi[2]}}</p>
     </div>
 </body>
 </html>
