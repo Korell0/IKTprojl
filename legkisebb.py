@@ -19,5 +19,6 @@ def legkisebbszam():
                 else:
                     kicsi = items
                     final_list.append(kicsi)
-    return final_list
+    print(final_list)
 
+legkisebbszam()
