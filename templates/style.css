@@ -71,3 +71,11 @@ li{
     height: 15%;
     margin-left: 10px;
 }
+table{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px;
+    border-collapse:separate;
+    border-spacing:70px 0px;
+    font-size: 40px;
+}
