@@ -9,4 +9,10 @@ Korábbi sorsolások
         1  209db
     Leghasonlóbb számsorok:
     
-    legkisebb számok
+    legkisebb számok:
+    [1, 2, 5, 15, 45]
+    68
+    [2, 6, 9, 23, 26]
+    66
+    [2, 3, 6, 8, 30]
+    49

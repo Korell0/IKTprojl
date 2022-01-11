@@ -30,26 +30,25 @@ with open('D:\GitAdam\onelethtml\IKTprojl\otos.csv', 'r') as file:
     sor_masodik.append(tomb[1][0:5])
     print(sor_masodik)
 #lekérdezés_2-----------------------
-    db=[]
-
-    for i in range(1,91):
-        szamolo=0
-        for j in range(len(tomb)):
-            for n in range(5):
-                if tomb[j] == i:
-                    szamolo+=1
-                elif tomb[n] == i:
-                    szamolo+=1 
-        db.append(szamolo)
-    print(db)
-    for i in range(len(db)):
-        if db[i]==208:
-            print(f"{i+1} 208")
-        elif db[i]==209:
-            print(f"{i+1} 209")
-        elif db[i]==218:
-            print(f"{i+1} 218")
-
+#    db=[]
+#    print(len(tomb))
+# #   for i in range(1,91):
+ #   szamolo=0
+#        for j in range(len(tomb)):
+#            for n in range(5):
+#                print(n)
+#                if tomb[j][n] == i:
+#                   szamolo+=1
+#        db.append(szamolo)
+  #  print(db)
+  #  for i in range(len(db)):
+ #       if db[i]==208:
+ #           print(f"{i+1} 208")
+ #       elif db[i]==209:
+ #           print(f"{i+1} 209")
+ #       elif db[i]==218:
+ #           print(f"{i+1} 218")
+#
     #sorba rendezés
     #sorrend=db
     #for i in range(len(sorrend)):
@@ -58,6 +57,22 @@ with open('D:\GitAdam\onelethtml\IKTprojl\otos.csv', 'r') as file:
     #            c=sorrend[j]
     #            sorrend[j]=sorrend[i]
     #            sorrend[i]=c
+    belso_tomb =[]
+    final_tomb = []
+    kicsi = 9999999999999999999
+    for i in tomb:
+        for l in i[0]:
+            belso_tomb.append(int(l))
+    for j in range(0, len(belso_tomb), 5):
+        final_tomb.append(belso_tomb[j : j+5])
+            
+    for i in final_tomb:
+        if sum(i) < kicsi:
+            print(i)
+            kicsi = sum(i)
+            print(kicsi)
+            
+
 
 
 
