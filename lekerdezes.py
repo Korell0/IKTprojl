@@ -68,10 +68,28 @@ with open('D:\GitAdam\onelethtml\IKTprojl\otos.csv', 'r') as file:
             
     for i in final_tomb:
         if sum(i) < kicsi:
-            print(i)
             kicsi = sum(i)
-            print(kicsi)
             
+
+    for i in final_tomb:
+        if i[0]+1==i[1]:
+            if i[1]+1==i[2]:
+                if i[2]+1==i[3]:
+                    print("ok3a")
+                    if i[3]+1==i[4]:
+                        continue
+        elif i[1]+1==i[2]:
+            if i[2]+1==i[3]:
+                print("ok3b")
+                print(i)
+                if i[3]+1==i[4]:
+                    print("ok4b")
+        elif i[2]+1==i[3]:
+                if i[3]+1==i[4]:
+                    print("ok4c")  
+                    print(i)      
+
+
 
 
 
