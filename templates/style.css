@@ -4,6 +4,7 @@ html,body{
     margin: 0px;
     padding: 0px;
     font-family: Arial;
+    background-color: rgb(216, 213, 213);
 }
 .div1{
     float: left;
