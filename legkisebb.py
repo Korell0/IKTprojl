@@ -21,4 +21,3 @@ def legkisebbszam():
                     final_list.append(kicsi)
     print(final_list)
 
-legkisebbszam()
