@@ -4,6 +4,7 @@ html,body{
     margin: 0px;
     padding: 0px;
     font-family: Arial;
+    background-color: rgb(216, 213, 213);
 }
 .div1{
     float: left;
@@ -70,4 +71,12 @@ li{
 .golyo{
     height: 15%;
     margin-left: 10px;
+}
+table{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px;
+    border-collapse:separate;
+    border-spacing:70px 0px;
+    font-size: 40px;
 }
