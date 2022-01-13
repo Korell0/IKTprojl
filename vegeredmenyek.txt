@@ -8,7 +8,8 @@ Korábbi sorsolások
         3  218db
         1  209db
     Leghasonlóbb számsorok:
-    
+    1305 és 2275:
+    3 12 22 29 36  1995 és  3 12 20 29 36 1976
     legkisebb számok:
     [1, 2, 5, 15, 45]
     68

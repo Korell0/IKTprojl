@@ -57,6 +57,7 @@ with open('D:\GitAdam\onelethtml\IKTprojl\otos.csv', 'r') as file:
     #            c=sorrend[j]
     #            sorrend[j]=sorrend[i]
     #            sorrend[i]=c
+    #legkissebb szamsor lekérdezés
     belso_tomb =[]
     final_tomb = []
     kicsi = 9999999999999999999
@@ -70,27 +71,46 @@ with open('D:\GitAdam\onelethtml\IKTprojl\otos.csv', 'r') as file:
         if sum(i) < kicsi:
             kicsi = sum(i)
             
+    # lehoszabb sorozat lekérdezés
+ #   for i in final_tomb:
+ #       if i[0]+1==i[1]:
+ #           if i[1]+1==i[2]:
+ #               if i[2]+1==i[3]:
+ #                   print("ok3a")
+ #                   if i[3]+1==i[4]:
+ #                       continue
+ #       elif i[1]+1==i[2]:
+ #           if i[2]+1==i[3]:
+ #               if i[3]+1==i[4]:
+ #                     continue
+ #        elif i[2]+1==i[3]:
+ #               if i[3]+1==i[4]:
+ #                     continue
+    #leghasonlóbb sorozat lekérdezés
 
-    for i in final_tomb:
-        if i[0]+1==i[1]:
-            if i[1]+1==i[2]:
-                if i[2]+1==i[3]:
-                    print("ok3a")
-                    if i[3]+1==i[4]:
-                        continue
-        elif i[1]+1==i[2]:
-            if i[2]+1==i[3]:
-                print("ok3b")
-                print(i)
-                if i[3]+1==i[4]:
-                    print("ok4b")
-        elif i[2]+1==i[3]:
-                if i[3]+1==i[4]:
-                    print("ok4c")  
-                    print(i)      
+    lehet_sor = []
+    for i in range(5):
+        lehet_sor.append(0)
 
+    for i in range(len(final_tomb)):
+        for j in range(5):
+            lehet_sor[j] = final_tomb[i][j]
+        for k in range(len(final_tomb)):
+            x = 0
+            y = 0
+            for l in range(5):
+                if lehet_sor[l] in final_tomb[k]:
+                    x+=1
+                elif lehet_sor[l]-2 in final_tomb[k] or lehet_sor[l]+2 in final_tomb[k]:
+                    if not(lehet_sor[l]-2 in lehet_sor) and not(lehet_sor[l]+2 in lehet_sor):
+                        y+=1
+            if x == 4 and y == 1:
+                print(f"{k+2} és {i+2}: ")
+                for m in range(5):
+                    print(f"{final_tomb[k][m]} ", end="")
+                print(" és  ", end="")
+                for m in range(5):
+                    print(f"{lehet_sor[m]} ", end="")
+                print()
 
-
-
-
-
+    print("Itt a vége!")
