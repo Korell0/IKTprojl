@@ -47,9 +47,8 @@ h1{
     float: left;
     height: 100%;
     background-color:rgb(66, 66, 66);
-    
     padding: 0;
-    line-height: 35px;
+    line-height: 54.2px;
     width: 410px;
 }
 .menu hr{ 
@@ -79,4 +78,8 @@ h1{
     padding: 0;
     width: 480px;
     float: right;
+}
+#keret{
+    height: 100%;
+    width: 100%;
 }

@@ -13,61 +13,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-    <!--navbar button-->
-    <nav class="navbar navbar-dark bg-dark d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
-        <div class="container-fluid ">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">    
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <div id="keret">
+        <!--navbar button-->
+        <nav class="navbar navbar-dark bg-dark d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
+            <div class="container-fluid ">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">    
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+        </nav>
+
+        <!--oldal menü nagy oldal esetén-->
+        <!--id="navbarToggleExternalContent"-->
+        <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block" >
+            <section class="menu">
+                    <img src="../kepek/indexkep.png" alt="lotto kép" id="lottokep"> <br>
+                    <a href="index.html">Korábbi sorsolások</a> <br> <hr>
+                    <a href="leggyakoribb.html">Leggyakoribb számok</a> <br> <hr>
+                    <a href="leghasonlobb.html">Leghasonlóbb számsorok</a> <br> <hr>
+                    <a href="leghosszabb.html">Leghosszabb sorozatok számsorokban</a> <br> <hr>
+                    <a href="legkisebb.html">Legkissebb összegű számsorok</a> <br> <hr>
+                    <a href="grafikon.html">Grafikonok</a> <br> <hr>
+                    <a href="erdekes.html">Érdekes történetek</a> <br> 
+            </section>    
+        </div> 
+
+        <!--lenyíló navbar-->
+        <div class="collapse " id="navbarToggleExternalContent" class="d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
+            <section class="menu">
+                    <img src="../kepek/indexkep.png" alt="lotto kép" id="lottokep"> <br>
+                    <a href="index.html">Korábbi sorsolások</a> <br> <hr>
+                    <a href="leggyakoribb.html">Leggyakoribb számok</a> <br> <hr>
+                    <a href="leghasonlobb.html">Leghasonlóbb számsorok</a> <br> <hr>
+                    <a href="leghosszabb.html">Leghosszabb sorozatok számsorokban</a> <br> <hr>
+                    <a href="legkisebb.html">Legkissebb összegű számsorok</a> <br> <hr>
+                    <a href="grafikon.html">Grafikonok</a> <br> <hr>
+                    <a href="erdekes.html">Érdekes történetek</a> <br> 
+            </section>    
+        </div> 
+
+        <!--conent-->
+        <div class="div2" id="tartalom">
+            <h1 style="padding-top: 5%;"> Korábbi sorsolások</h1>
+            <h2 style="margin-left: 5%; margin-top: 5%; padding-left: 420px;">Az előző heti nyerőszámok</h2>
+            <img style="margin-left: 10%;" class="golyo" src="../kepek/piros30.png" >
+            <img class="golyo" src="../kepek/barna54.png" >
+            <img class="golyo" src="../kepek/zold55.png" >
+            <img class="golyo" src="../kepek/kek81.png" >
+            <img class="golyo" src="../kepek/lila89.png" >
+            <h2 style="margin-left: 5%; margin-top: 5%; padding-left: 420px;">A múlt heti nyerőszámok</h2>
+            <img style="margin-left: 10%;" class="golyo" src="../kepek/piros30.png" >
+            <img class="golyo" src="../kepek/barna57.png" >
+            <img class="golyo" src="../kepek/zold58.png" >
+            <img class="golyo" src="../kepek/kek61.png" >
+            <img class="golyo" src="../kepek/lila86.png" >
         </div>
-    </nav>
-
-    <!--oldal menü nagy oldal esetén-->
-    <!--id="navbarToggleExternalContent"-->
-    <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block" >
-        <section class="menu">
-                <img src="../kepek/indexkep.png" alt="lotto kép" id="lottokep"> <br>
-                <a href="index.html">Korábbi sorsolások</a> <br> <hr>
-                <a href="leggyakoribb.html">Leggyakoribb számok</a> <br> <hr>
-                <a href="leghasonlobb.html">Leghasonlóbb számsorok</a> <br> <hr>
-                <a href="leghosszabb.html">Leghosszabb sorozatok számsorokban</a> <br> <hr>
-                <a href="legkisebb.html">Legkissebb összegű számsorok</a> <br> <hr>
-                <a href="grafikon.html">Grafikonok</a> <br> <hr>
-                <a href="erdekes.html">Érdekes történetek</a> <br> 
-        </section>    
-    </div> 
-
-    <!--lenyíló navbar-->
-    <div class="collapse " id="navbarToggleExternalContent" class="d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none">
-        <section class="menu">
-                <img src="../kepek/indexkep.png" alt="lotto kép" id="lottokep"> <br>
-                <a href="index.html">Korábbi sorsolások</a> <br> <hr>
-                <a href="leggyakoribb.html">Leggyakoribb számok</a> <br> <hr>
-                <a href="leghasonlobb.html">Leghasonlóbb számsorok</a> <br> <hr>
-                <a href="leghosszabb.html">Leghosszabb sorozatok számsorokban</a> <br> <hr>
-                <a href="legkisebb.html">Legkissebb összegű számsorok</a> <br> <hr>
-                <a href="grafikon.html">Grafikonok</a> <br> <hr>
-                <a href="erdekes.html">Érdekes történetek</a> <br> 
-        </section>    
-    </div> 
-    
-    <!--conent-->
-    <div class="div2" id="tartalom">
-        <h1 style="padding-top: 5%;"> Korábbi sorsolások</h1>
-        <h2 style="margin-left: 5%; margin-top: 5%; padding-left: 420px;">Az előző heti nyerőszámok</h2>
-        <img style="margin-left: 10%;" class="golyo" src="../kepek/piros30.png" >
-        <img class="golyo" src="../kepek/barna54.png" >
-        <img class="golyo" src="../kepek/zold55.png" >
-        <img class="golyo" src="../kepek/kek81.png" >
-        <img class="golyo" src="../kepek/lila89.png" >
-        <h2 style="margin-left: 5%; margin-top: 5%; padding-left: 420px;">A múlt heti nyerőszámok</h2>
-        <img style="margin-left: 10%;" class="golyo" src="../kepek/piros30.png" >
-        <img class="golyo" src="../kepek/barna57.png" >
-        <img class="golyo" src="../kepek/zold58.png" >
-        <img class="golyo" src="../kepek/kek61.png" >
-        <img class="golyo" src="../kepek/lila86.png" >
-    </div>
     </div>
 </body>
 </html>
