@@ -108,17 +108,33 @@ h2{
         padding-left: 0;
         margin-left: 0%;
     }
+    .kerteszszoveg,p{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
 
-@media screen and (min-width:972px){
+@media screen and (min-width:975px){
     .eltuntetes{
         display: none;
     }
+    .kerteszszoveg,p{
+        padding-left: 450px;
+        padding-right: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
 }
 
 .korsoshtmlkepek{
     height: 255px;
     width: 250px;
     float: left;
+}
 
+#kerteszh1{
+    padding-top: 1%;
 }
