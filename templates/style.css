@@ -48,7 +48,7 @@ h1{
     height: 100%;
     background-color:rgb(66, 66, 66);
     padding: 0;
-    line-height: 54.2px;
+    line-height: 52.6px;
     width: 410px;
 }
 .menu hr{ 
@@ -74,12 +74,16 @@ h1{
     }
 }
 #lottokep{
-    height: 100%;
+    height: 90%;
     padding: 0;
     width: 480px;
     float: right;
 }
-#keret{
+.keret{
     height: 100%;
     width: 100%;
+}
+.leggyakoribb{
+    text-align: center;
+    padding-right: 600px;
 }
