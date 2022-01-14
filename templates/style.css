@@ -98,3 +98,20 @@ h2{
     padding-top: 3%;
     padding-left: 17%;
 }
+.nevek{
+    color: black;
+}
+
+@media screen and (max-width:971px){
+    .nevek{
+        text-align: center;
+        padding-left: 0;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (min-width:972px){
+    .eltuntetes{
+        display: none;
+    }
+}
