@@ -39,6 +39,8 @@ h1{
 }
 #grafikon{
     background-color: rgb(216, 213, 213);
+    width: 50%;
+    height: 50%;
 }
 .golyo{
     height: 15%;
@@ -88,9 +90,11 @@ h1{
 .leggyakoribb{
     text-align: center;
     padding-right: 400px;
-
 }
 h2{
     padding-left: 280px;
-    
+}
+.grafikonhely{
+    padding-top: 3%;
+    padding-left: 17%;
 }
