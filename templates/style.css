@@ -96,7 +96,10 @@ h2{
 }
 .grafikonhely{
     padding-top: 3%;
-    padding-left: 17%;
+    margin-left: 460px;
+    width: 600px;
+    height: auto;
+    display: block;
 }
 .nevek{
     color: black;
@@ -117,7 +120,8 @@ h2{
     font-size: 18pt;
 }
 #kocsisimg{
-    margin-left: 440px;
+    margin-left: 480px;
+    display: block;
 }
 
 @media screen and (max-width:971px){
